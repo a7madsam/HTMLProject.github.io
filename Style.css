@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.parent {
+  background-color: #eee;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 10px 10px;
+  padding: 10px;
+}
+.parent .one {
+  overflow: hidden;
+  padding: 15px;
+  background-color: #fff;
+  grid-row: 1/6;
+  grid-column: 1/7;
+  position: relative;
+}
+.one .name,
+.two .name,
+.three .name,
+.four .name,
+.five .name,
+.six .name,
+.seven .name,
+.eight .name,
+.nine .name,
+.ten .name {
+  font-size: large;
+  font-weight: bold;
+}
+.one .name span,
+.two .name span,
+.three .name span,
+.four .name span,
+.five .name span,
+.six .name span,
+.seven .name span,
+.eight .name span,
+.nine .name span,
+.ten .name span {
+  font-size: small;
+  color: gray;
+}
+
+.one .main-content,
+.two .main-content,
+.three .main-content,
+.four .main-content,
+.five .main-content,
+.six .main-content,
+.seven .main-content,
+.eight .main-content,
+.nine .main-content,
+.ten .main-content {
+  font-size: small;
+  font-weight: bold;
+}
+.one .second-conte,
+.two .second-conte,
+.three .second-conte,
+.four .second-conte,
+.five .second-conte,
+.six .second-conte,
+.seven .second-conte,
+.eight .second-conte,
+.nine .second-conte,
+.ten .second-conte {
+  font-size: small;
+}
+.parent .two {
+  overflow: hidden;
+  padding: 15px;
+  background-color: #fff;
+  grid-row: 1/6;
+  grid-column: 7/10;
+  position: relative;
+}
+.parent .three {
+  overflow: hidden;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  grid-row: 1/18;
+  grid-column: 10/13;
+  position: relative;
+}
+.parent .four {
+  overflow: hidden;
+  padding: 15px;
+  background-color: #fff;
+  grid-row: 6/18;
+  grid-column: 1/4;
+  position: relative;
+}
+.parent .five {
+  overflow: hidden;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  grid-row: 6/12;
+  grid-column: 4/10;
+  position: relative;
+}
+.parent .six {
+  overflow: hidden;
+  padding: 15px;
+  background-color: #fff;
+  grid-row: 12/18;
+  grid-column: 4/10;
+  position: relative;
+}
+.parent .seven {
+  overflow: hidden;
+  padding: 15px;
+  background-color: #fff;
+  grid-row: 18/30;
+  grid-column: 1/4;
+  position: relative;
+}
+.parent .eight {
+  overflow: hidden;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  grid-row: 18/30;
+  grid-column: 4/7;
+  position: relative;
+}
+.parent .nine {
+  overflow: hidden;
+  padding: 15px;
+  background-color: #fff;
+  grid-row: 18/30;
+  grid-column: 7/10;
+  position: relative;
+}
+.parent .ten {
+  overflow: hidden;
+  padding: 15px;
+  background-color: #fff;
+  grid-row: 18/30;
+  grid-column: 10/13;
+  position: relative;
+}
+.one::before,
+.two::before,
+.three::before,
+.four::before,
+.five::before,
+.six::before,
+.seven::before,
+.eight::before,
+.nine::before,
+.ten::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  bottom: -3;
+  left: 0;
+  background-color: red;
+}
